@@ -11,6 +11,13 @@ module.exports = {
         style: (name) => `${name}/style/less`
       },
       'vant'
+    ],
+    ['import',
+      {
+        libraryName: 'ant-design-vue',
+        libraryDirectory: 'es',
+        style: 'css'
+      }
     ]
   ],
   // common + es6 共存

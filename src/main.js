@@ -12,8 +12,13 @@ import router from './router'
 import { menuHeader, menuAside } from '@/menu'
 import { frameInRoutes } from '@/router/routes'
 
+// 数据展示部分
+import { Table } from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
+
 // 核心插件
 Vue.use(d2Admin)
+Vue.use(Table)
 
 new Vue({
   router,
