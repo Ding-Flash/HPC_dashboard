@@ -7,6 +7,8 @@ import demoComponents from './modules/demo-components'
 // 功能
 import demoPlayground from './modules/demo-playground'
 
+import buaaHpc from '@/menu/modules/buaa_hpc'
+
 /**
  * @description 给菜单数据补充上 path 字段
  * @description https://github.com/d2-projects/d2-admin/issues/209
@@ -24,6 +26,7 @@ function supplementPath (menu) {
 
 // 菜单 侧边栏
 export const menuAside = supplementPath([
+  buaaHpc,
   demoComponents,
   demoPlugins,
   demoPlayground
@@ -31,11 +34,7 @@ export const menuAside = supplementPath([
 
 // 菜单 顶栏
 export const menuHeader = supplementPath([
-  {
-    path: '/index',
-    title: '首页',
-    icon: 'home'
-  },
+  buaaHpc,
   demoPlayground,
   demoComponents,
   demoPlugins
