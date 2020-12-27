@@ -17,6 +17,11 @@ export default {
       path: '/buaa/hpc/jobs',
       title: '任务列表',
       icon: 'upload'
+    },
+    {
+      path: '/buaa/hpc/jobs_learn',
+      title: '任务列表_learn',
+      icon: 'upload'
     }
   ]
 }

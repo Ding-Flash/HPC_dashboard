@@ -28,10 +28,6 @@ const columns = [
     title: 'account',
     dataIndex: 'account',
     sorter: (a, b) => a.account.charCodeAt(0) - b.account.charCodeAt(0),
-    // filters: [
-    //   { text: 'Male', value: 'male' },
-    //   { text: 'Female', value: 'female' }
-    // ],
     width: '8%'
   },
   {

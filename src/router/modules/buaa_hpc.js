@@ -29,6 +29,12 @@ export default {
       name: 'buaa_hpc_job_list',
       component: _import('system/buaa_hpc/jobs/jobs.vue'),
       meta: { ...meta, title: '任务列表' }
+    },
+    {
+      path: 'jobs_learn',
+      name: 'buaa_hpc_job_list_learn',
+      component: _import('system/buaa_hpc/jobs_learn/jobs_learn.vue'),
+      meta: { ...meta, title: '任务列表_learn' }
     }
   ]
 }
