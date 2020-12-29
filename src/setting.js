@@ -17,7 +17,7 @@ export default {
     opened: [
       {
         name: 'index',
-        fullPath: '/',
+        fullPath: '/index',
         meta: {
           title: '首页',
           auth: false
