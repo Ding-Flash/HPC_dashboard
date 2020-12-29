@@ -13,12 +13,21 @@ import { menuHeader, menuAside } from '@/menu'
 import { frameInRoutes } from '@/router/routes'
 
 // 数据展示部分
-import { Table } from 'ant-design-vue'
+import { Table, Row, Col, Layout, DatePicker, LocaleProvider, Button } from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+import 'v-charts/lib/style.css'
+import VCharts from 'v-charts'
 
 // 核心插件
 Vue.use(d2Admin)
 Vue.use(Table)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Layout)
+Vue.use(DatePicker)
+Vue.use(VCharts)
+Vue.use(LocaleProvider)
+Vue.use(Button)
 
 new Vue({
   router,

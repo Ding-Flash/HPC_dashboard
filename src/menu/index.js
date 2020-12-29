@@ -27,15 +27,15 @@ function supplementPath (menu) {
 // 菜单 侧边栏
 export const menuAside = supplementPath([
   buaaHpc,
-  demoComponents,
-  demoPlugins,
-  demoPlayground
+  // demoComponents,
+  // demoPlugins,
+  // demoPlayground
 ])
 
 // 菜单 顶栏
 export const menuHeader = supplementPath([
   buaaHpc,
-  demoPlayground,
-  demoComponents,
-  demoPlugins
+  // demoPlayground,
+  // demoComponents,
+  // demoPlugins
 ])

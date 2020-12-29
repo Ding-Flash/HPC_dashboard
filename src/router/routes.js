@@ -54,9 +54,9 @@ const frameIn = [
       }
     ]
   },
-  playground,
-  plugins,
-  components,
+  // playground,
+  // plugins,
+  // components,
   buaaHpc
 ]
 
