@@ -1,5 +1,8 @@
 <template>
   <d2-container>
+    <PercentageDisplay  :clusterData="clusterData"
+                        :cpu-data="cpuData"
+                        :gpu-data="gpuData"/>
     <StateDisplay :clusterData="clusterData"
                   :cpu-data="cpuData"
                   :gpu-data="gpuData"
@@ -30,6 +33,7 @@ import { request } from '@/api/service'
 import StateDisplay from '@/views/system/buaa_hpc/stat/components/StateDisplay'
 import HistoryDisplay from '@/views/system/buaa_hpc/stat/components/HistoryDisplay'
 import JobHistoryDisplay from '@/views/system/buaa_hpc/stat/components/JobHistoryDisplay'
+import PercentageDisplay from '@/views/system/buaa_hpc/stat/components/PercentageDisplay'
 
 export default {
   name: 'buaa_hpc_stat',
@@ -113,7 +117,8 @@ export default {
   components: {
     StateDisplay,
     HistoryDisplay,
-    JobHistoryDisplay
+    JobHistoryDisplay,
+    PercentageDisplay
   },
   methods: {
     fetch () {

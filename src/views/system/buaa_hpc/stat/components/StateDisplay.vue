@@ -28,8 +28,12 @@
                   :loading="loading"/>
         </a-layout-content>
         <a-layout-footer class="block footer">
-          <div><p>{{ stat_one_title }}: {{ this.cpuData.total.one }}</p></div>
-          <div><p>{{ stat_two_title }}: {{ this.cpuData.total.two }}</p></div>
+          <div>
+            <p>{{ stat_one_title }}: {{ this.cpuData.total.one }}</p>
+          </div>
+          <div>
+            <p>{{ stat_two_title }}: {{ this.cpuData.total.two }}</p>
+          </div>
         </a-layout-footer>
       </a-layout>
     </a-col>
@@ -44,8 +48,12 @@
                   :loading="loading"/>
         </a-layout-content>
         <a-layout-footer class="block footer">
-          <div><p>{{ stat_one_title }}: {{ this.gpuData.total.one }}</p></div>
-          <div><p>{{ stat_two_title }}: {{ this.gpuData.total.two }}</p></div>
+          <div>
+            <p>{{ stat_one_title }}: {{ this.gpuData.total.one }}</p>
+          </div>
+          <div>
+            <p>{{ stat_two_title }}: {{ this.gpuData.total.two }}</p>
+          </div>
         </a-layout-footer>
       </a-layout>
     </a-col>
@@ -95,7 +103,7 @@ export default {
     }
     return {}
   },
-  methods: {}
+  methods: {},
 }
 </script>
 
@@ -126,6 +134,18 @@ export default {
       text-align: center;
       font-size: 18px;
     }
+  }
+
+  .corePercentage {
+    color: #18c9a5;
+    text-align: center;
+
+  }
+
+  .nodePercentage {
+    color: #56a7e3;
+    text-align: center;
+
   }
 }
 </style>
