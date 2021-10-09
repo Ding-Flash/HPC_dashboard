@@ -42,7 +42,7 @@
             <el-col :span="4">
               <el-card shadow="never" class="d2-card">
                 <p slot="title">回调函数</p>
-                <p slot="header" class="subheader">CUP节点使用率:</p>
+                <p slot="header" class="subheader">CPU节点使用率:</p>
                 <div class="group">
                   <d2-count-up :end="cpuNodePer" :callback="() => {className = 'end'}" :class="className"/>
                   <div class="percentage">%</div>
